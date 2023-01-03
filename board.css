@@ -1,0 +1,48 @@
+@import "cell.css";
+
+x-board {
+    /* Color */
+    background: #FFFFFF;
+
+    /* Font */
+    font-size: 1em;
+
+    /* Space */
+    padding: 0.4em;
+    margin:  0;
+
+    /* Border */
+    border-color:  black;
+    border-style:  solid;
+    border-width:  1px;
+    border-radius: 0;
+
+    /* Layout */
+    flex:       0 1 auto;
+    box-sizing: border-box;
+
+    /* Layout */
+    display:         flex;
+    flex-flow:       column nowrap;
+    align-items:     center;
+    justify-content: center;
+}
+
+x-row {
+    /* Font */
+    font-size: 1em;
+
+    /* Space */
+    padding: 0;
+    margin:  0;
+
+    /* Layout */
+    flex:       0 1 auto;
+    box-sizing: border-box;
+
+    /* Layout */
+    display:         flex;
+    flex-flow:       row nowrap;
+    align-items:     center;
+    justify-content: space-between;
+}

@@ -1,0 +1,54 @@
+x-win {
+    /* Font */
+    font-size: 1em;
+
+    /* Space */
+    padding: 0;
+    margin:  0;
+
+    /* Border */
+    border-radius: 16px;
+
+    /* Layout */
+    flex:       1 1 auto;
+    box-sizing: border-box;
+
+    /* Layout */
+    display:         flex;
+    flex-flow:       row nowrap;
+    align-items:     center;
+    justify-content: center;
+    align-self: stretch;
+}
+
+x-win > a {
+    /* Color */
+    color:      white;
+    background: #808080;
+
+    /* Font */
+    font-family: roboto;
+    font-weight: bold;
+    font-style:  normal;
+    font-size:   2em;
+
+    /* Font */
+    text-decoration: none;
+
+    /* Space */
+    padding: 0.5em;
+    margin:  0;
+
+    /* Border */
+    border-radius: 8px;
+
+    /* Layout */
+    flex:       1 1 auto;
+    box-sizing: border-box;
+
+    /* Layout */
+    display:         flex;
+    flex-flow:       row nowrap;
+    align-items:     center;
+    justify-content: center;
+}

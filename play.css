@@ -1,0 +1,48 @@
+@import "win.css";
+@import "game.css";
+
+html, body {
+    /* Color */
+    background: #FFFFFF;
+
+    /* Size */
+    width:  100%;
+    height: 100%;
+
+    /* Space */
+    padding: 0;
+    margin:  0;
+
+    /* Layout */
+    flex:       1 1 auto;
+    box-sizing: border-box;
+
+    /* Layout */
+    display:         flex;
+    flex-flow:       column nowrap;
+    align-items:     center;
+    justify-content: stretch;
+}
+
+main {
+    /* Color */
+    background: #FFFFFF;
+
+    /* Size */
+    width:  auto;
+    height: auto;
+
+    /* Space */
+    padding: 0;
+    margin   0;
+
+    /* Layout */
+    flex:       1 1 auto;
+    box-sizing: border-box;
+
+    /* Layout */
+    display:         flex;
+    flex-flow:       column nowrap;
+    align-items:     center;
+    justify-content: flex-start;
+}

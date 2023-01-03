@@ -1,0 +1,50 @@
+x-cell {
+    /* Color */
+    color:      white;
+    background: black;
+
+    /* Size */
+    width:  1em;
+    height: 1em;
+
+    /* Font */
+    font-family: roboto;
+    font-weight: bold;
+    font-style:  normal;
+    font-size:   2em;
+
+    /* Space */
+    padding: 1.0em;
+    margin:  0.1em;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Layout */
+    flex:       0 1 auto;
+    box-sizing: border-box;
+
+    /* Layout */
+    display:         flex;
+    flex-flow:       row nowrap;
+    align-items:     center;
+    justify-content: center;
+}
+
+x-cell:empty {
+    /* Color */
+    background: #00000000;
+
+    /* Cursor */
+    cursor: auto;
+}
+
+x-cell.sky {
+    /* Color */
+    color:      #000000;
+    background: #CECECE;
+
+    /* Font */
+
+    /* Border */
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="play.css">
+        <title>16 Puzzle</title>
+    </head>
+    <body>
+        <script type="module">
+            import * as t    from "./t.js";
+            import * as url  from "./url.js";
+            import * as game from "./game.js";
+
+            function html(n) {
+                let main = document.createElement("main");
+
+                main.append(game.html(n));
+
+                return main;
+            }
+
+            let [n] = url.parameters(window.location.search);
+
+            n = t.number(n);
+            n = n ? n : 4;
+
+            document.body.append(html(n));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+x-time {
+    /* Color */
+    color: black;
+
+    /* Font */
+    font-size: 2em;
+
+    /* Space */
+    padding: 0;
+    margin:  0;
+
+    /* Layout */
+    flex:       0 1 auto;
+    box-sizing: border-box;
+
+    /* Layout */
+    display:         flex;
+    flex-flow:       column nowrap;
+    align-items:     center;
+    justify-content: center;
+}

@@ -1,0 +1,27 @@
+@import "win.css";
+@import "time.css";
+@import "moves.css";
+@import "board.css";
+
+x-game {
+    /* Color */
+    background: #FFFFFF;
+
+    /* Font */
+    font-size: 1em;
+
+    /* Space */
+    padding: 0;
+    margin:  0;
+    gap:     1em;
+
+    /* Layout */
+    flex:       0 1 auto;
+    box-sizing: border-box;
+
+    /* Layout */
+    display:         flex;
+    flex-flow:       column nowrap;
+    align-items:     center;
+    justify-content: flex-start;
+}
