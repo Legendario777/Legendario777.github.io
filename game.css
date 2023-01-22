@@ -4,12 +4,6 @@
 @import "board.css";
 
 x-game {
-    /* Color */
-    background: #FFFFFF;
-
-    /* Font */
-    font-size: 1em;
-
     /* Space */
     padding: 0;
     margin:  0;

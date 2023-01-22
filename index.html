@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>16 Puzzle</title>
+    </head>
+    <body>
+        <script type="module">
+            import * as sizes  from "./sizes.js";
+            import * as themes from "./themes.js";
+
+            function html(type) {
+                let main = document.createElement("main");
+                let ths  = document.createElement("x-themes");
+                let szs  = document.createElement("x-sizes");
+
+                main.className = type;
+
+                let ts = themes.list().map(t => {
+                    let img = document.createElement("img")
+
+                    img.src = `${t}.png`;
+
+                    img.onclick = (e) => {
+                        main.className = t;
+                        window.localStorage.theme = t;
+                    };
+
+                    return img;
+                });
+
+                let ss = sizes.list().map(n => {
+                    let a = document.createElement("a");
+
+                    a.href = `play.html?n=${n}`;
+
+                    a.append(n);
+
+                    return a;
+                });
+
+                main.append(ths, szs);
+                    ths.append(...ts);
+                    szs.append(...ss);
+
+                return main;
+            }
+
+            let type = window.localStorage.theme;
+
+            document.body.append(html(type));
+        </script>
+    </body>
+</html>

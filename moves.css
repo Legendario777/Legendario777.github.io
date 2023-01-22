@@ -1,6 +1,6 @@
 x-moves {
     /* Color */
-    color: black;
+    color: #000000;
 
     /* Font */
     font-size: 4em;
@@ -18,4 +18,29 @@ x-moves {
     flex-flow:       column nowrap;
     align-items:     center;
     justify-content: center;
+}
+
+.strawberry x-moves {
+    /* Color */
+    color: #F20C32;
+}
+
+.peach x-moves {
+    /* Color */
+    color: #F24856;
+}
+
+.lemon x-moves {
+    /* Color */
+    color: #FFC907;
+}
+
+.sky x-moves {
+    /* Color */
+    color: #022C7F;
+}
+
+.spirit x-moves {
+    /* Color */
+    color: #281D47;
 }

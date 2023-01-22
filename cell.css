@@ -1,7 +1,7 @@
 x-cell {
     /* Color */
-    color:      white;
-    background: black;
+    color:      #202020;
+    background: #FFFFFF;
 
     /* Size */
     width:  1em;
@@ -17,8 +17,18 @@ x-cell {
     padding: 1.0em;
     margin:  0.1em;
 
+    /* Border */
+    border-width:  0;
+    border-radius: 4px;
+
+    /* Shadow */
+    box-shadow: 0 4px 0 0 #D0D0D0, 0 6px 2px 0 #00000080;
+
     /* Cursor */
     cursor: pointer;
+
+    /* Selection */
+    user-select: none;
 
     /* Layout */
     flex:       0 1 auto;
@@ -31,20 +41,135 @@ x-cell {
     justify-content: center;
 }
 
+x-cell:active {
+    /* Color */
+    color: #FFFFFF;
+
+    /* Shadow */
+    box-shadow: 0 0 0 0 #000000;
+
+    /* Shadow */
+    text-shadow: 0 0 16px #000000, 0 0 16px #000000;
+
+    /* Translate */
+    translate: 0 4px;
+}
+
+.strawberry x-cell {
+    /* Color */
+    color: #F85C70;
+
+    /* Shadow */
+    box-shadow: 0 4px 0 0 #D0D0D0, 0 6px 2px 0 #00000080;
+}
+
+.strawberry x-cell:active {
+    /* Color */
+    color: #FFFFFF;
+
+    /* Shadow */
+    box-shadow: 0 0 0 0 #000000;
+
+    /* Shadow */
+    text-shadow: 0 0 16px #FF0000, 0 0 16px #FF0000;
+
+    /* Translate */
+    translate: 0 4px;
+}
+
+/* TODO */
+.peach x-cell {
+    /* Color */
+    color: #F2AB79;
+
+    /* Shadow */
+    box-shadow: 0 4px 0 0 #D0D0D0, 0 6px 2px 0 #00000080;
+}
+
+.peach x-cell:active {
+    /* Color */
+    color: #FFFFFF;
+
+    /* Shadow */
+    box-shadow: 0 0 0 0 #000000;
+
+    /* Shadow */
+    text-shadow: 0 0 16px #FF7700, 0 0 16px #FF7700;
+
+    /* Translate */
+    translate: 0 4px;
+}
+
+.lemon x-cell {
+    /* Color */
+    color: #FFD53D;
+
+    /* Shadow */
+    box-shadow: 0 4px 0 0 #D0D0D0, 0 6px 2px 0 #00000080;
+}
+
+.lemon x-cell:active {
+    /* Color */
+    color: #FFFFFF;
+
+    /* Shadow */
+    box-shadow: 0 0 0 0 #00000040;
+
+    /* Shadow */
+    text-shadow: 0 0 16px #FFCC00, 0 0 16px #FFCC00;
+
+    /* Translate */
+    translate: 0 4px;
+}
+
+.sky x-cell {
+    /* Color */
+    color: #749FF7;
+
+    /* Shadow */
+    box-shadow: 0 4px 0 0 #D0D0D0, 0 6px 2px 0 #00000080;
+}
+
+.sky x-cell:active {
+    /* Color */
+    color: #FFFFFF;
+
+    /* Shadow */
+    box-shadow: 0 0 0 0 #000000;
+
+    /* Shadow */
+    text-shadow: 0 0 16px #0000FF, 0 0 16px #0000FF;
+
+    /* Translate */
+    translate: 0 4px;
+}
+
+.spirit x-cell {
+    /* Color */
+    color: #A16AE8;
+
+    /* Shadow */
+    box-shadow: 0 4px 0 0 #D0D0D0, 0 6px 2px 0 #00000080;
+}
+
+.spirit x-cell:active {
+    /* Color */
+    color: #FFFFFF;
+
+    /* Shadow */
+    box-shadow: 0 0 0 0 #000000;
+
+    /* Shadow */
+    text-shadow: 0 0 16px #AA00FF, 0 0 16px #AA00FF;
+
+    /* Translate */
+    translate: 0 4px;
+}
+
 x-cell:empty {
     /* Color */
-    background: #00000000;
+    opacity: 0;
 
     /* Cursor */
     cursor: auto;
-}
-
-x-cell.sky {
-    /* Color */
-    color:      #000000;
-    background: #CECECE;
-
-    /* Font */
-
-    /* Border */
 }

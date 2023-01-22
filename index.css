@@ -1,0 +1,139 @@
+html, body {
+    /* Color */
+    background: #FFFFFF;
+
+    /* Size */
+    width:  100%;
+    height: 100%;
+
+    /* Space */
+    padding: 0;
+    margin:  0;
+
+    /* Layout */
+    flex:       1 1 auto;
+    box-sizing: border-box;
+
+    /* Layout */
+    display:         flex;
+    flex-flow:       column nowrap;
+    align-items:     center;
+    justify-content: stretch;
+}
+
+main {
+    /* Space */
+    padding: 0;
+    margin:  0;
+    gap:     4em;
+
+    /* Layout */
+    flex:       1 1 auto;
+    box-sizing: border-box;
+
+    /* Layout */
+    display:         flex;
+    flex-flow:       column nowrap;
+    align-items:     center;
+    justify-content: center;
+}
+
+x-themes, x-sizes {
+    /* Space */
+    padding: 0;
+    margin:  0;
+    gap:     0.2em;
+
+    /* Layout */
+    flex:       0 1 auto;
+    box-sizing: border-box;
+
+    /* Layout */
+    display:         flex;
+    flex-flow:       row wrap;
+    align-items:     center;
+    justify-content: center;
+}
+
+img {
+    /* Size */
+    width:  6em;
+    height: 6em;
+
+    /* Space */
+    padding: 0;
+    margin:  0;
+
+    /* Border */
+    border-width:  0;
+    border-radius: 8px;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Layout */
+    flex:       0 1 auto;
+    box-sizing: border-box;
+}
+
+a {
+    /* Color */
+    color:      #FFFFFF;
+    background: #202020;
+
+    /* Font */
+    font-family: roboto;
+    font-weight: bold;
+    font-style:  normal;
+    font-size:   2em;
+
+    /* Font */
+    text-decoration: none;
+
+    /* Size */
+    width:  3em;
+    height: 3em;
+
+    /* Space */
+    padding: 0;
+    margin:  0;
+
+    /* Border */
+    border-width:  0;
+    border-radius: 8px;
+
+    /* Layout */
+    flex:       1 1 auto;
+    box-sizing: border-box;
+
+    /* Layout */
+    display:         flex;
+    flex-flow:       row wrap;
+    align-items:     center;
+    justify-content: center;
+}
+
+.strawberry a {
+    /* Color */
+    background: #F85C70;
+}
+
+.peach a {
+    /* Color */
+    background: #FBC490;
+}
+
+.lemon a {
+    /* Color */
+    background: #FFD53D;
+}
+
+.sky a {
+    /* Color */
+    background: #98E8E0;
+}
+
+.spirit a {
+    /* Color */
+    background: #A16AE8;
+}

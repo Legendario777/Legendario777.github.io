@@ -2,7 +2,7 @@
 
 x-board {
     /* Color */
-    background: #FFFFFF;
+    background: linear-gradient(#505050, #333333);
 
     /* Font */
     font-size: 1em;
@@ -12,10 +12,11 @@ x-board {
     margin:  0;
 
     /* Border */
-    border-color:  black;
-    border-style:  solid;
-    border-width:  1px;
-    border-radius: 0;
+    border-width:  0;
+    border-radius: 8px;
+
+    /* Shadow */
+    box-shadow: 0 8px 0 0 #111111, 0 8px 8px 0 #00000080;
 
     /* Layout */
     flex:       0 1 auto;
@@ -29,9 +30,6 @@ x-board {
 }
 
 x-row {
-    /* Font */
-    font-size: 1em;
-
     /* Space */
     padding: 0;
     margin:  0;
@@ -45,4 +43,44 @@ x-row {
     flex-flow:       row nowrap;
     align-items:     center;
     justify-content: space-between;
+}
+
+.strawberry x-board {
+    /* Color */
+    background: linear-gradient(#F26079, #F20C32);
+
+    /* Shadow */
+    box-shadow: 0 8px 0 0 #BF0927, 0 8px 8px 0 #00000080;
+}
+
+.peach x-board {
+    /* Color */
+    background: linear-gradient(#F28F48, #F24856);
+
+    /* Shadow */
+    box-shadow: 0 8px 0 0 #D22836, 0 8px 8px 0 #00000080;
+}
+
+.lemon x-board {
+    /* Color */
+    background: linear-gradient(#FFE37F, #FFC907);
+
+    /* Shadow */
+    box-shadow: 0 8px 0 0 #F2BE24, 0 8px 8px 0 #00000080;
+}
+
+.sky x-board {
+    /* Color */
+    background: linear-gradient(#022C7F, #749FF7);
+
+    /* Shadow */
+    box-shadow: 0 8px 0 0 #5F7FBF, 0 8px 8px 0 #00000080;
+}
+
+.spirit x-board {
+    /* Color */
+    background: linear-gradient(#281D47, #572C85, #8E5AA5);
+
+    /* Shadow */
+    box-shadow: 0 8px 0 0 #553366, 0 8px 8px 0 #00000080;
 }

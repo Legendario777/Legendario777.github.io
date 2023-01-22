@@ -5,6 +5,7 @@ x-win {
     /* Space */
     padding: 0;
     margin:  0;
+    gap:     0.4em;
 
     /* Border */
     border-radius: 16px;
@@ -17,14 +18,14 @@ x-win {
     display:         flex;
     flex-flow:       row nowrap;
     align-items:     center;
-    justify-content: center;
-    align-self: stretch;
+    justify-content: space-between;
+    align-self:      stretch;
 }
 
 x-win > a {
     /* Color */
-    color:      white;
-    background: #808080;
+    color:      #FFFFFF;
+    background: #404040;
 
     /* Font */
     font-family: roboto;
@@ -36,14 +37,21 @@ x-win > a {
     text-decoration: none;
 
     /* Space */
-    padding: 0.5em;
+    padding: 0.2em;
     margin:  0;
 
     /* Border */
-    border-radius: 8px;
+    border-width:  0;
+    border-radius: 16px;
+
+    /* Shadow */
+    box-shadow: 0 8px 0 0 #222222;
+
+    /* Selection */
+    user-select: none;
 
     /* Layout */
-    flex:       1 1 auto;
+    flex:       1 1 50%;
     box-sizing: border-box;
 
     /* Layout */
@@ -51,4 +59,12 @@ x-win > a {
     flex-flow:       row nowrap;
     align-items:     center;
     justify-content: center;
+}
+
+x-win > a:active {
+    /* Shadow */
+    box-shadow: 0 0 0 0 #000000;
+
+    /* Translate */
+    translate: 0 8px;
 }

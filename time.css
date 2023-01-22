@@ -1,6 +1,6 @@
 x-time {
     /* Color */
-    color: black;
+    color: #202020;
 
     /* Font */
     font-size: 2em;
@@ -18,4 +18,29 @@ x-time {
     flex-flow:       column nowrap;
     align-items:     center;
     justify-content: center;
+}
+
+.strawberry x-time {
+    /* Color */
+    color: #F26079;
+}
+
+.peach x-time {
+    /* Color */
+    color: #F28F48;
+}
+
+.lemon x-time {
+    /* Color */
+    color: #FFE37F;
+}
+
+.sky x-time {
+    /* Color */
+    color: #749FF7;
+}
+
+.spirit x-time {
+    /* Color */
+    color: #8E5AA5;
 }

@@ -4,12 +4,15 @@
 export function html() {
     let win = document.createElement("x-win");
     let a   = document.createElement("a");
+    let b   = document.createElement("a");
 
-    a.innerText = "↺";
+    a.innerText = "←";
+    b.innerText = "↺";
 
-    a.href = "";
+    a.href = "index.html";
+    b.href = "";
 
-    win.append(a);
+    win.append(a, b);
 
     return win;
 }

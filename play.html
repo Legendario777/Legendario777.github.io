@@ -12,20 +12,23 @@
             import * as url  from "./url.js";
             import * as game from "./game.js";
 
-            function html(n) {
+            function html(type, n) {
                 let main = document.createElement("main");
+
+                main.className = type;
 
                 main.append(game.html(n));
 
                 return main;
             }
 
-            let [n] = url.parameters(window.location.search);
+            let type = window.localStorage.theme;
+            let [n]  = url.parameters(window.location.search);
 
             n = t.number(n);
             n = n ? n : 4;
 
-            document.body.append(html(n));
+            document.body.append(html(type, n));
         </script>
     </body>
 </html>

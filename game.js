@@ -54,6 +54,7 @@ export function html(n) {
             if (e.end) {
                 boom.cloneNode(true).play();
                 game.append(win.html());
+                game.onclick = () => {};
             }
         });
     };

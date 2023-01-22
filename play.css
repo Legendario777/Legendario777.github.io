@@ -20,7 +20,7 @@ html, body {
     /* Layout */
     display:         flex;
     flex-flow:       column nowrap;
-    align-items:     center;
+    align-items:     stretch;
     justify-content: stretch;
 }
 
@@ -28,13 +28,9 @@ main {
     /* Color */
     background: #FFFFFF;
 
-    /* Size */
-    width:  auto;
-    height: auto;
-
     /* Space */
     padding: 0;
-    margin   0;
+    margin:  0;
 
     /* Layout */
     flex:       1 1 auto;
@@ -45,4 +41,48 @@ main {
     flex-flow:       column nowrap;
     align-items:     center;
     justify-content: flex-start;
+}
+
+main {
+    /* Color */
+    background:
+        radial-gradient(circle at 50% -25%, #FFFFFF, #FFFFFF 20%, #00000040),
+
+        conic-gradient(at 50% -5%, #00000000 30%, #FFFFFF80, #00000000 45%),
+        conic-gradient(at 50% -5%, #00000000 42%, #FFFFFFC0, #00000000 48%),
+        conic-gradient(at 50% -5%, #00000000 40%, #FFFFFFA0, #00000000 63%),
+        conic-gradient(at 50% -5%, #00000000 55%, #FFFFFF60, #00000000 69%),
+
+        conic-gradient(at 50% -5%, #00000000    32%, #FFFFFF40    32%    33%, #00000000 33%),
+        conic-gradient(at 50% -5%, #00000000    35%, #FFFFFF20    35%    36%, #00000000 36%),
+        conic-gradient(at 50% -5%, #00000000 35.50%, #FFFFFF40 35.50%    37%, #00000000 37%),
+        conic-gradient(at 50% -5%, #00000000    39%, #FFFFFF40    39%    42%, #00000000 42%),
+        conic-gradient(at 50% -5%, #00000000    43%, #FFFFFFA0    43%    45%, #00000000 45%),
+        conic-gradient(at 50% -5%, #00000000    44%, #FFFFFFC0    44%    49%, #00000000 49%),
+        conic-gradient(at 50% -5%, #00000000    47%, #FFFFFFD0    47%    53%, #00000000 53%),
+        conic-gradient(at 50% -5%, #00000000    54%, #FFFFFFE0    54%    55%, #00000000 55%),
+        conic-gradient(at 50% -5%, #00000000 55.50%, #FFFFFFA0 55.50%    57%, #00000000 57%),
+        conic-gradient(at 50% -5%, #00000000    59%, #FFFFFF40    59%    64%, #00000000 64%),
+        conic-gradient(at 50% -5%, #00000000    58%, #FFFFFF40    58%    61%, #00000000 61%),
+        conic-gradient(at 50% -5%, #00000000    63%, #FFFFFF20    63%    65%, #00000000 65%),
+        conic-gradient(at 50% -5%, #00000000    66%, #FFFFFF10    66%    67%, #00000000 67%),
+
+        #202020;
+}
+
+main.strawberry {
+    /* Color */
+    background: linear-gradient(#00000000, #00000000 95%, #202020 95%, #202020), linear-gradient(#005FBF, #FF72C4 75%, #FFBFE4 95%, #FFFFFF);
+}
+
+main.peach {
+    /* Color */
+    background: conic-gradient(at 50% -5%, #FFD47F, #FF7FA9);
+}
+
+main.lemon {
+    /* Color */
+    background:
+        radial-gradient(circle at 50% 125%, #FF8800, #FFFFFF00),
+        #FFD53D;
 }
